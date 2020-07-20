@@ -51,7 +51,7 @@ class RPN(nn.Module):
                 self.base.load_state_dict(pretrained_model)
 
             elif conf.base_model == 50:
-                pretrained_model = torch.load('res50_faster_rcnn_iter_1190000.pth',
+                pretrained_model = torch.load('/disk/no_backup/polley/D4LCN/pretrain/resnet50pretrain/res50_faster_rcnn_iter_1190000.pth',
                                               map_location=lambda storage, loc: storage)
                 pretrained_model = {k.replace('resnet.', ''): v for k, v in pretrained_model.items() if 'resnet' in k}
                 # print(pretrained_model.keys())

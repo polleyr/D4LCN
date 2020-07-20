@@ -20,7 +20,7 @@ def Config():
     conf.do_test = True
     conf.lr_policy = 'onecycle'  # 'onecycle'  # 'cosinePoly'  # 'cosineRestart'  # 'poly'
     conf.restart_iters = 5000
-    conf.batch_size = 2 * 2
+    conf.batch_size = 1 * 2
     conf.base_model = 50
     conf.depth_channel = 1
     conf.adaptive_diated = True
@@ -28,7 +28,7 @@ def Config():
     conf.use_corner = False
     conf.corner_in_3d = False
     conf.use_hill_loss = False
-    conf.use_rcnn_pretrain = False
+    conf.use_rcnn_pretrain = True
     conf.deformable = False
 
     conf.alias = 'Adaptive_block2'

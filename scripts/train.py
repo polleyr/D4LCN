@@ -6,7 +6,7 @@ from getopt import getopt
 import numpy as np
 import sys
 import os
-# os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+#os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 # stop python from writing so much bytecode
 sys.dont_write_bytecode = True
