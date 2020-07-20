@@ -28,7 +28,8 @@ split = 'kitti_split1'
 base_data = os.path.join(os.getcwd(), 'data')
 
 kitti_raw = dict()
-kitti_raw['depth'] = os.path.join(base_data, 'kitti', 'depth_2')
+#kitti_raw['depth'] = os.path.join(base_data, 'kitti', 'depth_2')
+kitti_raw['depth'] = "/disk/vanishing_data/polley/KittiDepthDORN/"
 
 kitti_tra = dict()
 kitti_tra['depth'] = os.path.join(base_data, split, 'training', 'depth_2')
